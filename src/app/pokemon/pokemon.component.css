@@ -1,0 +1,27 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  flex-grow: 1;
+  border-color: red;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex-container div {
+  min-width: 250px;
+  margin: 10px;
+}
+
+.pokemon {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
